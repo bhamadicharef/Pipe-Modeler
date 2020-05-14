@@ -1,0 +1,473 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\SetupWizard.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SetupWizard.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GUI_DIALOG DIALOGEX 0, 0, 483, 298
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Model"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 324, 126
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Flute Modeling"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PC-Based Flute Modeling Version 2.9",IDC_APP_NAME,49,6,
+                    207,8,SS_NOPREFIX
+    LTEXT           "Written by Brahim HAMADICHAREF, Copyright (C) 1998-1999",
+                    IDC_AUTHOR,49,18,207,8
+    DEFPUSHBUTTON   "OK",IDOK,267,7,50,14,WS_GROUP
+    LTEXT           "Department of Communication and Electronic Engineering\nUniversity of Plymouth, Drake Circus\nPlymouth PL4 8AA, Devon, ENGLAND",
+                    IDC_STATIC,49,84,207,34
+    CONTROL         131,IDC_STATIC,"Static",SS_BITMAP,270,76,47,43
+    LTEXT           "http://www.tech.plym.ac.uk/spmc/brahim/",
+                    IDC_HYPERLINK_URL,49,65,207,9
+    LTEXT           "Compilation date and time",IDC_COMPILATION,49,30,207,8
+    LTEXT           "Email: bhamadicharef@plymouth.ac.uk",
+                    IDC_HYPERLINK_EMAIL,49,46,207,9
+END
+
+IDD_GUI_PPAGE_EXCITATION DIALOGEX 0, 0, 600, 300
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "&Excitation"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER_ATTACK,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,31,23,262
+    LTEXT           "Attack:\n500ms",IDC_TEXT_ATTACK,7,7,47,21
+    CONTROL         "Slider1",IDC_SLIDER_SUSTAIN,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,60,31,23,
+                    262
+    LTEXT           "Sustain:\n500ms",IDC_TEXT_SUSTAIN,60,7,47,21
+    CONTROL         "Slider1",IDC_SLIDER_RELEASE,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,113,31,23,
+                    262
+    LTEXT           "Release:\n500ms",IDC_TEXT_RELEASE,113,7,47,21
+    CONTROL         "Exp",IDC_CHECK_EXP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,168,7,39,11
+    CONTROL         "Slider1",IDC_SLIDER_VIBRATOGAIN,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,480,31,22,
+                    262
+    LTEXT           "VibratoGain:\n0.9",IDC_TEXT_VIBRATOGAIN,480,7,47,21
+    CONTROL         "Slider1",IDC_SLIDER_VIBRATOFREQ,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,546,31,22,
+                    262
+    LTEXT           "VibratoFreq:\n0.9",IDC_TEXT_VIBRATOFREQ,546,7,47,21
+    CONTROL         "Slider1",IDC_SLIDER_NOISEGAIN,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,213,31,22,
+                    262
+    LTEXT           "NoiseGain:\n0.9",IDC_TEXT_NOISEGAIN,213,7,47,21
+    CONTROL         "Slider1",IDC_SLIDER_MAXPRESSURE,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,276,31,22,
+                    262
+    LTEXT           "PreMax:\n0.9",IDC_TEXT_MAXPRESSURE,276,7,47,21
+END
+
+IDD_GUI_PPAGE_OUTPUT DIALOGEX 0, 0, 600, 300
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "&Output"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER_FREQUENCY,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,215,31,22,
+                    262
+    LTEXT           "Frequency:\n440",IDC_TEXT_FREQUENCY,211,7,47,21
+    CONTROL         "Slider1",IDC_SLIDER_JETREFLECTION,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,111,31,22,
+                    262
+    LTEXT           "JetRflection:\n0.9",IDC_TEXT_JETREFLECTION,109,7,47,21
+    CONTROL         "Slider1",IDC_SLIDER_ENDREFLECTION,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,163,31,22,
+                    262
+    LTEXT           "EndRflection:\n0.9",IDC_TEXT_ENDREFLECTION,160,7,47,21
+    CONTROL         "Slider1",IDC_SLIDER_OUTPUTGAIN,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,397,31,22,
+                    262
+    LTEXT           "OutputGain:\n0.9",IDC_TEXT_OUTPUTGAIN,392,7,47,21
+    CONTROL         "Slider1",IDC_SLIDER_OUTPUTGAINTH1,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,449,31,22,
+                    262
+    LTEXT           "TH1Gain:\n0.9",IDC_TEXT_OUTPUTGAINTH1,443,7,47,21
+    CONTROL         "Slider1",IDC_SLIDER_OUTPUTGAINTH2,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,501,31,22,
+                    262
+    LTEXT           "TH2Gain:\n0.9",IDC_TEXT_OUTPUTGAINTH2,494,7,47,21
+    CONTROL         "Slider1",IDC_SLIDER_OUTPUTGAINTH3,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,553,31,22,
+                    262
+    LTEXT           "TH3Gain:\n0.9",IDC_TEXT_OUTPUTGAINTH3,545,7,47,21
+END
+
+IDD_GUI_PPAGE_LINEAR DIALOGEX 0, 0, 600, 300
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "&Linear"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PIPEEDITCTRL,"Static",SS_BLACKRECT | WS_BORDER,7,
+                    7,185,286,WS_EX_CLIENTEDGE
+    CONTROL         "Slider1",IDC_SLIDERD1,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,237,272,161,21
+    CONTROL         "Slider1",IDC_SLIDERD2,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,237,239,161,21
+    CONTROL         "Slider1",IDC_SLIDERL1,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,237,7,28,120
+    CONTROL         "Slider1",IDC_SLIDERL2,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,276,7,28,120
+    CONTROL         "Slider1",IDC_SLIDERL3,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,315,7,28,120
+    CONTROL         "Slider1",IDC_SLIDERL4,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,354,7,28,120
+    CONTROL         "Slider1",IDC_SLIDERD3,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,237,206,161,21
+    CONTROL         "Slider1",IDC_SLIDERD4,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,237,173,161,21
+    LTEXT           "L1: ",IDC_TEXT_L1,421,7,55,14
+    LTEXT           "L2: ",IDC_TEXT_L2,421,29,55,14
+    LTEXT           "L3: ",IDC_TEXT_L3,421,51,55,14
+    LTEXT           "L4: ",IDC_TEXT_L4,421,73,55,14
+    CONTROL         "Slider1",IDC_SLIDERL5,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,385,7,28,120
+    LTEXT           "L5: ",IDC_TEXT_L5,421,95,55,14
+    CONTROL         "Slider1",IDC_SLIDERD5,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,237,140,161,21
+    CONTROL         "Slider1",IDC_SLIDERD6,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,510,272,83,21
+    LTEXT           "D1: ",IDC_TEXT_D1,425,272,55,14
+    LTEXT           "D2: ",IDC_TEXT_D2,425,239,55,14
+    LTEXT           "D3: ",IDC_TEXT_D3,425,206,55,14
+    LTEXT           "D4: ",IDC_TEXT_D4,425,173,55,14
+    LTEXT           "D5: ",IDC_TEXT_D5,425,140,55,14
+    LTEXT           "D6: ",IDC_TEXT_D6,510,245,83,14
+END
+
+IDD_GUI_PPAGE_NONLINEAR DIALOGEX 0, 0, 600, 300
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "&NonLinear"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Coef:",IDC_TEXT,305,7,288,12
+    CONTROL         "",IDC_CURVEEDITCTRL,"Static",SS_BLACKRECT | WS_BORDER,7,
+                    7,286,286,WS_EX_CLIENTEDGE
+    CONTROL         "Slider1",IDC_SLIDER_NL1,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,342,56,18,237
+    CONTROL         "Slider1",IDC_SLIDER_NL2,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,375,56,18,237
+    CONTROL         "Slider1",IDC_SLIDER_NL3,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,408,56,18,237
+    CONTROL         "Slider1",IDC_SLIDER_NL4,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,441,56,18,237
+    CONTROL         "Slider1",IDC_SLIDER_NL5,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,474,56,18,237
+    PUSHBUTTON      "Linear",IDC_LINEAR,342,29,50,14
+    CONTROL         "Slider1",IDC_SLIDER_NL6,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,507,56,18,237
+    CONTROL         "Slider1",IDC_SLIDER_NL7,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,540,52,18,241
+    CONTROL         "Slider1",IDC_SLIDER_NL8,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,573,52,18,241
+    PUSHBUTTON      "Slit",IDC_SLIT,442,29,50,14
+    PUSHBUTTON      "Cook",IDC_COOK,542,29,50,14
+END
+
+IDD_GUI_PPAGE_SPECTRUM DIALOGEX 0, 0, 600, 300
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "&Spectrum"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Log Scale",IDC_CHECK_LOG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,278,98,15
+    CONTROL         "",IDC_FFTEDITCTRL,"Static",SS_BLACKRECT | WS_BORDER,7,7,
+                    586,266,WS_EX_CLIENTEDGE
+END
+
+IDD_GUI_PPAGE_FILES DIALOGEX 0, 0, 336, 225
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "&Files"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Browse",IDC_BROWSE,170,72,50,14
+    LTEXT           "?:\\",IDC_TEXT_BROWSE,7,110,322,24
+    PUSHBUTTON      "440 Hz",IDC_440HZ,7,44,50,14
+    PUSHBUTTON      "Save",IDC_SAVE,79,7,50,14
+    PUSHBUTTON      "Load",IDC_LOAD,7,7,50,14
+    PUSHBUTTON      "880 Hz",IDC_880HZ,95,44,50,14
+    EDITTEXT        IDC_FILENAME,84,72,77,14,ES_AUTOHSCROLL
+    RTEXT           "FileName:",IDC_STATIC,7,76,72,10
+    PUSHBUTTON      "1760 Hz",IDC_1760HZ,183,44,50,14
+END
+
+IDD_GUI_PPAGE_WAVEFORM DIALOGEX 0, 0, 600, 300
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "&WaveForm"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Sustain",IDC_CHECK_SUSTAIN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,278,44,15
+    CONTROL         "",IDC_WAVEEDITCTRL,"Static",SS_BLACKRECT | WS_BORDER,7,
+                    7,586,265,WS_EX_CLIENTEDGE
+    CONTROL         "ZeroCrossing",IDC_CHECK_ZEROCROSSING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,87,278,66,15
+    CONTROL         "Slider1",IDC_SLIDER_LENGTH,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_DISABLED | WS_TABSTOP,200,274,119,19
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "GUI\0"
+            VALUE "CompanyName", "Brahim HAMADICHAREF\0"
+            VALUE "FileDescription", "GUI MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GUI\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "OriginalFilename", "GUI.exe\0"
+            VALUE "ProductName", "GUI Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GUI_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 476
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_GUI_PPAGE_EXCITATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 593
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+
+    IDD_GUI_PPAGE_OUTPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 593
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+
+    IDD_GUI_PPAGE_LINEAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 593
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+
+    IDD_GUI_PPAGE_NONLINEAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 593
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+
+    IDD_GUI_PPAGE_SPECTRUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 593
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+
+    IDD_GUI_PPAGE_FILES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_GUI_PPAGE_WAVEFORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 593
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\s_unilog.bmp"
+IDB_TABIMAGES           BITMAP  DISCARDABLE     "res\\tab.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR  DISCARDABLE     "res\\hand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Pipe Modeler 2.9"
+    IDS_BFF_TITLE           "Select Path for WAV file"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\SetupWizard.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

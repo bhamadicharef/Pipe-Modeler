@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{1CAC75ED-D4CD-4CED-AF44-5CD604C63C18}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\GUI.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\GUI.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\GUI.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\GUI.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\GUI.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\GUI.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\GUI.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\GUI.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Adsr.cpp" />
+    <ClCompile Include="Asr.cpp" />
+    <ClCompile Include="BrowseForFolder.cpp" />
+    <ClCompile Include="CurveEditCtrl.cpp" />
+    <ClCompile Include="DCBlock.cpp" />
+    <ClCompile Include="DLineL.cpp" />
+    <ClCompile Include="EnvExp.cpp" />
+    <ClCompile Include="ExcitationPropPage.cpp" />
+    <ClCompile Include="FFT.cpp" />
+    <ClCompile Include="FftEditCtrl.cpp" />
+    <ClCompile Include="FilesPropPage.cpp" />
+    <ClCompile Include="Filter.cpp" />
+    <ClCompile Include="FirstPropPage.cpp" />
+    <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="GUIDlg.cpp" />
+    <ClCompile Include="HyperLink.cpp" />
+    <ClCompile Include="JetTable.cpp" />
+    <ClCompile Include="Junction.cpp" />
+    <ClCompile Include="LinearPropPage.cpp" />
+    <ClCompile Include="LoopWave.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="Noise.cpp" />
+    <ClCompile Include="NonLinearPropPage.cpp" />
+    <ClCompile Include="OnePole.cpp" />
+    <ClCompile Include="OneZero.cpp" />
+    <ClCompile Include="OrganPipeModel.cpp" />
+    <ClCompile Include="OtherPropPage.cpp" />
+    <ClCompile Include="OutputPropPage.cpp" />
+    <ClCompile Include="PipeEditCtrl.cpp" />
+    <ClCompile Include="PipeEditCtrl2.cpp" />
+    <ClCompile Include="Polynomial.cpp" />
+    <ClCompile Include="ReedTable.cpp" />
+    <ClCompile Include="SBDestination.cpp" />
+    <ClCompile Include="SpectrumPropPage.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TKObject.cpp" />
+    <ClCompile Include="ToneHoleFilter.cpp" />
+    <ClCompile Include="ToneHoleJunction.cpp" />
+    <ClCompile Include="TubeSection.cpp" />
+    <ClCompile Include="TwoZero.cpp" />
+    <ClCompile Include="WaveEditCtrl.cpp" />
+    <ClCompile Include="WaveEditCtrlEx.cpp" />
+    <ClCompile Include="WaveFormPropPage.cpp" />
+    <ClCompile Include="WavFileOut.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GUI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="Adsr.h" />
+    <ClInclude Include="Asr.h" />
+    <ClInclude Include="BrowseForFolder.h" />
+    <ClInclude Include="CurveEditCtrl.h" />
+    <ClInclude Include="DCBlock.h" />
+    <ClInclude Include="DLineL.h" />
+    <ClInclude Include="EnvExp.h" />
+    <ClInclude Include="ExcitationPropPage.h" />
+    <ClInclude Include="FFT.h" />
+    <ClInclude Include="FftEditCtrl.h" />
+    <ClInclude Include="FilesPropPage.h" />
+    <ClInclude Include="Filter.h" />
+    <ClInclude Include="FirstPropPage.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="GUIDlg.h" />
+    <ClInclude Include="HyperLink.h" />
+    <ClInclude Include="JetTable.h" />
+    <ClInclude Include="Junction.h" />
+    <ClInclude Include="LinearPropPage.h" />
+    <ClInclude Include="LoopWave.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="Noise.h" />
+    <ClInclude Include="NonLinearPropPage.h" />
+    <ClInclude Include="OnePole.h" />
+    <ClInclude Include="OneZero.h" />
+    <ClInclude Include="OrganPipeModel.h" />
+    <ClInclude Include="OtherPropPage.h" />
+    <ClInclude Include="OutputPropPage.h" />
+    <ClInclude Include="PipeEditCtrl.h" />
+    <ClInclude Include="PipeEditCtrl2.h" />
+    <ClInclude Include="Polynomial.h" />
+    <ClInclude Include="ReedTable.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SBDestination.h" />
+    <ClInclude Include="SpectrumPropPage.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TKObject.h" />
+    <ClInclude Include="ToneHoleFilter.h" />
+    <ClInclude Include="ToneHoleJunction.h" />
+    <ClInclude Include="TubeSection.h" />
+    <ClInclude Include="TwoZero.h" />
+    <ClInclude Include="WaveEditCtrl.h" />
+    <ClInclude Include="WaveEditCtrlEx.h" />
+    <ClInclude Include="WaveFormPropPage.h" />
+    <ClInclude Include="WavFileOut.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\GUI.ico" />
+    <Image Include="res\SetupWizard.ico" />
+    <Image Include="res\s_unilog.bmp" />
+    <Image Include="res\tab.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\GUI.rc2" />
+    <CustomBuild Include="res\hand.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
